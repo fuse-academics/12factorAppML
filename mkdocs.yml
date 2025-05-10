@@ -1,0 +1,29 @@
+site_name: AI Fellowship 2025
+site_description: A demonstration of the 12 factor application principles for Fusemachines AI Fellowship 2025.
+nav:
+  - Getting Started:
+      - AI Fellowship 2025: fellowship2025.md
+      - Overview: index.md
+      - Setting Up Project Documentation: mkdocs.md
+      - Git and Github: git.md
+      - Setting Up Project: project_setup.md
+  - 12 Factor App principles:
+      - Overview: 12-factor-app/overview.md
+      - 1. Codebase: 12-factor-app/codebase.md
+      - 2. Dependencies: 12-factor-app/dependency.md
+      - 3. Config: 12-factor-app/config.md
+      - 4. Backing Services: 12-factor-app/backing.md
+      - 5. Build, Release, Run: 12-factor-app/build.md
+      - 6. Processes: 12-factor-app/stateless.md
+      - 7. Port Binding: 12-factor-app/port.md
+      - 8. Concurrency: 12-factor-app/concurrency.md
+      - 9. Disposability: 12-factor-app/disposability.md
+      - 10. Dev/Prod Parity: 12-factor-app/parity.md
+      - 11. Logs: 12-factor-app/logging.md
+      - 12. Admin Processes: 12-factor-app/admin.md
+
+theme: 
+  name: readthedocs
+
+# extra_css:
+#   - css/extra.css

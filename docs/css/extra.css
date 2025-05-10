@@ -1,0 +1,11 @@
+/* Override ReadTheDocs primary color */
+.wy-side-nav-search,
+.wy-nav-top {
+  background: #b30000; /* deep red */
+}
+
+a,
+a:hover,
+a:focus {
+  color: #ffffff;
+}
