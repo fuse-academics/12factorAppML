@@ -1,8 +1,8 @@
 services:
   web:
     build: .
-    image: 12factordemo:latest
-    # image: aayushfuse/aifellowship:latest
+    # image: 12factordemo:latest
+    image: aayushfuse/12factorapp:latest
     container_name: irisdemo
 
     ports:
@@ -26,8 +26,8 @@ services:
       retries: 3
 
   mkdocs:
-    # image: aayushfuse/aifellowship:latest
-    image: 12factordemo:latest
+    image: aayushfuse/12factorapp:latest
+    # image: 12factordemo:latest
     container_name: mkdocs
     ports:
       - "9090:9090"
