@@ -1,6 +1,6 @@
 # Setting up your Python Environment
 
-A well-defined development environment and worflow that can be repeated for every new project helps to ensure efficient, consistent and high quality development. Keep the workflow simple, consistent and reproducible. Make sure to  documment everything and incorporate flexible architectures and scalable solutions that can adapt to evolving technologies and industry standards to sustain long-term functionality and relevance.
+A well-defined development environment and worflow that can be repeated for every new project helps to ensure efficient, consistent and high quality development. Keep the workflow simple, consistent and reproducible. Make sure to  document everything and incorporate flexible architectures and scalable solutions that can adapt to evolving technologies and industry standards to sustain long-term functionality and relevance.
 
 ## Pre-requisites
 
