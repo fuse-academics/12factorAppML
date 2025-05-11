@@ -2,13 +2,13 @@
 
 > **Maximize robustness with fast startup and graceful shutdown.**
 
-- Disposable project means that the app is easy to deploy and start, and can be stopped at moment's notice (when they receive SIGTERM). 
+- Disposable project means that the app is easy to deploy and start, and can be stopped at moment's notice (when they receive SIGTERM).
 - Short startup time enable fast elastic scaling, rapid deployment of code or config changes, and robustness of production deploys.
 
 Processes shut down gracefully when they receive a SIGTERM signal from the process manager and should be robust against sudden death in case of underlying hardware failure.
 
 
-### [Lifespan Events](https://fastapi.tiangolo.com/advanced/events/) 
+### [Lifespan Events](https://fastapi.tiangolo.com/advanced/events/)
 
 ```python
 from contextlib import asynccontextmanager

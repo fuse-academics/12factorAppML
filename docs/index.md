@@ -65,7 +65,7 @@ chmod +x script.sh
 ./install-extensions.sh
 ```
 
-## Project Management Tools 
+## Project Management Tools
 1. [Jira](https://www.atlassian.com/software/jira)
 2. [Odoo](https://www.odoo.com)
 3. [Trello](https://trello.com/)
@@ -107,19 +107,17 @@ Maintain detailed documentation for processes, data sources, and transformations
 
 ## Testing (Pytest, etc.)
 
-For testing we will be setting up 
+For testing we will be setting up
 
 - [pytest](https://docs.pytest.org/en/stable/)
 
 `pip install pytest`
 
 Update `pytest.ini` file
-``` 
-[pytest] 
-python_files = tests/*.py 
-python_paths = . 
+```
+[pytest]
+python_files = tests/*.py
+python_paths = .
 asyncio_default_fixture_loop_scope = function
 
 ```
-
-

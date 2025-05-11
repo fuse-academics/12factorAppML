@@ -1,4 +1,4 @@
-## Setting up project Documentation 
+## Setting up project Documentation
 **Commands**
 
 * `pip install mkdocs` - Installing library for Documentation
@@ -17,11 +17,10 @@
 
 
 **Edit `./mkdocs.yml` file**
-    
+
     site_name: Title of your Site
     site_description: Description of your site
     nav:
       - Getting Started:
         - Overview: index.md
     theme: readthedocs
-

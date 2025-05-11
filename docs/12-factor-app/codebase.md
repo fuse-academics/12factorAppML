@@ -4,7 +4,7 @@
 
 - Create a single codebase which can be single repo (in a centralized revision control system), or any set of repos who share a root commit (in a decentralized revision control system like Git) i.e. braches/clone/forks from a same root commit.
  - The single codebase will be deployed into a running instance of the app. The codebase remains the same across all deploys, although differen version may be active in each deploy.
- 
+
 ### Setting Up Git
 [`Download Git for Windows`](https://git-scm.com/downloads/win)
 ```
@@ -23,7 +23,7 @@ git config --global user.email "example@email.com"
 Setup [Secure Shell Protocol (SSH)  for Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) for secure connection channel
 
 ```bash
-ssh-keygen -t ed25519 -C "$(git config user.email)" # Create new shh key: 
+ssh-keygen -t ed25519 -C "$(git config user.email)" # Create new shh key:
 
 # Copy and add SSH key to SSH and GPG key page in Github
 ```

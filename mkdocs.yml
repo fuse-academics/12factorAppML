@@ -22,7 +22,7 @@ nav:
       - 11. Logs: 12-factor-app/logging.md
       - 12. Admin Processes: 12-factor-app/admin.md
 
-theme: 
+theme:
   name: readthedocs
 
 # extra_css:

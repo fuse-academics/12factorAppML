@@ -63,7 +63,7 @@ conda env create -f environment.yml
 ```
 
 ### Poetry
-  
+
 [Poetry](https://python-poetry.org/) is a mordern packaging and dependency management tool that aims to simplify the process of managing project dependencies and publishing packages to [PyPI](https://pypi.org/). It uses a single file, pyproject.toml, to manage both project metadata and dependencies, making it easier to maintain and understand the project structure.
 
 Installation: `pip install poetry --user --upgrade --pre`

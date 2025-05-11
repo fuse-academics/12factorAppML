@@ -1,7 +1,6 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
-import uvicorn
 from . import crud, models, schemas, database, ml_model
 from .logging_config import logger
 import numpy as np
