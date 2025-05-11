@@ -10,7 +10,7 @@ A backing service is any service the app consumes over the network as part of it
 - caching systems (such as Memcached)
 - SMTP services (such as Postmark)
 - Metrics-gathering services (such as New Relic or Loggly)
-- API-accessible consumer services (such as Twitter, Google Maps, or Last.fm) managed by same app administrator or third parties. 
+- API-accessible consumer services (such as Twitter, Google Maps, or Last.fm) managed by same app administrator or third parties.
 
 Changing the resource handle in the config should allow to easily swap the services, like switching from local(eg MySQL) service to a third-party provided (MySQL) service.
 
@@ -33,7 +33,7 @@ import mysql.connector
 
 load_dotenv()
 
-# Get database URL from environment variable 
+# Get database URL from environment variable
 conn = mysql.connector.connect(
     host=os.getenv("DATABASE_HOST"),
     user=os.getenv("DATABASE_USER"),

@@ -12,27 +12,27 @@ This project follows the [Gitflow Workflow](https://www.atlassian.com/git/tutori
 ## Supporting Branches
 
 - **feature/\***:
-    - Created from: `develop`  
-    - Purpose: New features  
-    - Merged into: `develop`  
+    - Created from: `develop`
+    - Purpose: New features
+    - Merged into: `develop`
     - Naming: `feature/user-login`
 
-- **release/\***:  
-    - Created from: `develop`  
-    - Purpose: Prepare for a production release (e.g., version bump, final testing)  
-    - Merged into: `main` and `develop`  
+- **release/\***:
+    - Created from: `develop`
+    - Purpose: Prepare for a production release (e.g., version bump, final testing)
+    - Merged into: `main` and `develop`
     - Naming: `release/1.0.0`
 
-- **hotfix/\***:  
-    - Created from: `main`  
-    - Purpose: Critical fixes to production  
-    - Merged into: `main` and `develop`  
+- **hotfix/\***:
+    - Created from: `main`
+    - Purpose: Critical fixes to production
+    - Merged into: `main` and `develop`
     - Naming: `hotfix/urgent-fix`
 
-- **bugfix/\*** (optional):  
-    - Created from: `develop`  
-    - Purpose: Fixing non-critical bugs  
-    - Merged into: `develop`  
+- **bugfix/\*** (optional):
+    - Created from: `develop`
+    - Purpose: Fixing non-critical bugs
+    - Merged into: `develop`
     - Naming: `bugfix/fix-login-error`
 
 ## Pull Request Rules

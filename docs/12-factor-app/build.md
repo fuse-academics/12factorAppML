@@ -10,8 +10,8 @@ According to 12 factor, codebase is transformed into a (non-development) deploy 
 
 **The twelve-factor app uses strict separation between the build, release, and run stages.**
 
-- **For example**, it is impossible to make changes to the code at runtime, since there is no way to propagate those changes back to the build stage. 
-Every release should always have a unique release ID, such as a timestamp of the release (such as 2011-04-06-20:32:17) or an incrementing number (such as v100). 
+- **For example**, it is impossible to make changes to the code at runtime, since there is no way to propagate those changes back to the build stage.
+Every release should always have a unique release ID, such as a timestamp of the release (such as 2011-04-06-20:32:17) or an incrementing number (such as v100).
 
 - Releases cannot be mutated once it is created. Any change must create a new release.
 

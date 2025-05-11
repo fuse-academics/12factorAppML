@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 import joblib
 from sklearn.tree import DecisionTreeClassifier
@@ -33,7 +32,7 @@ def train_and_save_model():
     model.fit(X_train, y_train)
 
     accuracy = model.score(X_test, y_test)
-    print(f"Model trained. Test Accuracy: {accuracy*100:.4f}%")
+    print(f"Model trained. Test Accuracy: {accuracy * 100:.4f}%")
 
     # Ensure the save directory exists
     MODEL_DIR.mkdir(parents=True, exist_ok=True)

@@ -2,13 +2,13 @@
 
 > **Export services via port binding**
 
-1. The twelve-factor app is completely self-contained and does not rely on runtime injection of a webserver into the execution environment to create a web-facing service. 
-2. The web app exports HTTP as a service by binding to a port, and listening to requests coming in on that port. 
+1. The twelve-factor app is completely self-contained and does not rely on runtime injection of a webserver into the execution environment to create a web-facing service.
+2. The web app exports HTTP as a service by binding to a port, and listening to requests coming in on that port.
 
-**In most languages this is done by using a webserver library.** 
+**In most languages this is done by using a webserver library.**
 
-- HTTP is not the only service that can be exported by port binding. 
-- Nearly any kind of server software can be run via a process binding to a port and awaiting incoming requests. 
+- HTTP is not the only service that can be exported by port binding.
+- Nearly any kind of server software can be run via a process binding to a port and awaiting incoming requests.
 
 *Examples include ejabberd (speaking XMPP), and Redis (speaking the Redis protocol).*
 

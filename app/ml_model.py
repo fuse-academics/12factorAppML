@@ -1,5 +1,3 @@
-from sklearn.datasets import load_iris
-from sklearn.ensemble import RandomForestClassifier
 import numpy as np
 import os
 from pathlib import Path
@@ -11,6 +9,7 @@ MODEL_PATH_ENV = os.environ.get("MODEL_PATH", "./models/iris_dtree.joblib")
 MODEL_PATH = Path(MODEL_PATH_ENV)
 
 IRIS_CLASS_NAMES = ["setosa", "versicolor", "virginica"]
+
 
 @lru_cache(maxsize=1)  # Cache the loaded model to avoid reloading on every call
 def load_model():

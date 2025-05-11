@@ -20,7 +20,7 @@ load_dotenv()  # load .env file
 # Code of your application, which uses environment variables (e.g. from `os.environ` or
 # `os.getenv`) as if they came from the actual environment.
 ```
-`.env` for this project 
+`.env` for this project
 ```bash
 #.env
 # Add this to the .env file
