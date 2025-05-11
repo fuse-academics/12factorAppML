@@ -19,7 +19,7 @@ This is a FastAPI-based microservice for predicting Iris flower species based on
 ## Local Setup
 ```bash
 # Cloning the repository
-git clone https://github.com/fuse-academics/12factorAppML.git
+git clone https://github.com/fuseai-fellowship/12factorAppML.git
 cd 12factorAppML
 
 # Creating and Activating Virtual Environment
