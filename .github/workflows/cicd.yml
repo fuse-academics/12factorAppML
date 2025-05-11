@@ -1,0 +1,51 @@
+name: CI/CD for FastAPI with Docker and Docker Compose
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build_and_push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          tags: aayushfuse/12factorapp
+
+  # deploy:
+  #   needs: build_and_push
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v2
+  #     # - name: Copy docker-compose.yml to server
+  #     #   uses: appleboy/scp-action@master
+  #     #   with:
+  #     #     host: ${{ secrets.SERVER_HOST }}
+  #     #     username: ${{ secrets.SERVER_USERNAME }}
+  #     #     key: ${{ secrets.SSH_PRIVATE_KEY }}
+  #     #     source: "docker-compose.yml"
+  #     #     target: "/home/aayush/fellowship/12-factor-app-demo"
+  #     - name: Deploy with Docker Compose
+  #       uses: appleboy/ssh-action@master
+  #       with:
+  #         host: ${{ secrets.SERVER_HOST }}
+  #         username: ${{ secrets.SERVER_USERNAME }}
+  #         key: ${{ secrets.SSH_PRIVATE_KEY }}
+  #         script: |
+  #           cd /home/aayush/fellowship/12-factor-app-demo
+  #           git pull origin main
+  #           docker-compose down
+  #           docker-compose up -d
